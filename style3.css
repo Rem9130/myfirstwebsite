@@ -1,0 +1,234 @@
+body, html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: #ad6e41;
+    margin: 5px;
+    align-items: center;
+}
+.Navi {
+  overflow: hidden;
+  background-color: rgb(253, 138, 7);
+}
+
+.Navi a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: 'Pattaya', sans-serif ;;
+}
+
+.Navi a:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.Navi a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.Navi .icon {
+  display: none;
+}
+
+/*Gallery*/
+h2{
+  font-family:'Pattaya', sans-serif ;
+  font-size: 50px;
+  background: chocolate;
+  text-align: center;
+}
+.products{
+  border: 3px outset black;
+  background-color: rgb(250, 246, 27);
+  padding: 5px;
+  margin: 5px;  
+  display: flex;
+  flex-wrap:wrap;
+  height: 0%
+} 
+.products div{
+flex-grow: 0;
+flex-shrink: 100px;
+flex-basis: 500px;
+margin: 5px;
+}
+.products div:nth-of-type(1){
+  flex-basis: 800px;
+  height: 50%;
+
+}
+.products div:nth-of-type(4){
+  flex-basis: 800px;
+  height: 60%;
+}
+.products div:nth-of-type(5){
+  flex-basis: 800px;
+  position: relative;
+  height: 50%;
+  bottom: 405px;
+
+}
+.products div:nth-of-type(6){
+  flex-basis: 800px;
+  position: relative;
+  height: 50%;
+  left: 810px;
+  bottom:590px;
+
+}
+.products div:nth-of-type(7){
+  flex-basis: 500px;
+  position: relative;
+  height: 50%;
+  right: 810px;
+}
+.products div:nth-of-type(8){
+  flex-basis: 500px;
+  position: relative;
+  height: 50%;
+  right: 680px;
+
+}
+.products div:nth-of-type(9){
+  flex-basis: 680px;
+  position: relative;
+  height: 50%;
+  left: 1160px;
+  bottom: 600px;
+
+}
+.products img{
+  width: 100%; 
+  height: 50%;
+}
+
+@media (min-width:521px) and (max-width:768px){
+  
+  h2{
+    font-family:'Pattaya', sans-serif ;
+    font-size: 50px;
+    background: chocolate;
+    text-align: center;
+  }
+  .products{
+    border: 3px outset black;
+    background-color: rgb(250, 246, 27);
+    padding: 5px;
+    margin: 5px;  
+    display: block;
+    height: 0%
+  } 
+  .products div:nth-of-type(1){
+    flex-basis: 800px;
+    height: 50%;
+  
+  }
+  .products div:nth-of-type(4){
+    flex-basis: 800px;
+    position: unset;
+    height: 60%;
+  }
+  .products div:nth-of-type(5){
+    flex-basis: 800px;
+    position: unset;
+
+  }
+  .products div:nth-of-type(6){
+    flex-basis: 800px;
+    position: unset;
+    height: 50%;
+ }
+  .products div:nth-of-type(7){
+    flex-basis: 500px;
+    position:unset;
+  }
+  .products div:nth-of-type(8){
+    flex-basis: 430px;
+    position: unset;
+  }
+  .products div:nth-of-type(9){
+    flex-basis: 430px;
+    position: unset;
+  }
+  .products img{
+    width: 100%; 
+    height: 50%;
+  }
+
+}
+
+/*Developer tools IphoneX size*/
+@media (min-width:100px) and (max-width:520px){  
+  h2{
+    font-family:'Pattaya', sans-serif ;
+    font-size: 50px;
+    background: chocolate;
+    text-align: center;
+  }
+  .Navi a:not(:first-child) {display: none;}
+    .Navi a.icon {
+      float: right;
+      display: block;
+    }
+    .Navi.responsive {position: relative;}
+    .Navi.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .Navi.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .products{
+    border: 3px outset black;
+    background-color: rgb(250, 246, 27);
+    padding: 5px;
+    margin: 5px;  
+    display: block;
+    height: 0%
+  } 
+  .products div:nth-of-type(1){
+    flex-basis: 800px;
+    height: 50%;
+  
+  }
+  .products div:nth-of-type(4){
+    flex-basis: 800px;
+    position: unset;
+    height: 60%;
+  }
+  .products div:nth-of-type(5){
+    flex-basis: 800px;
+    position: unset;
+
+  }
+  .products div:nth-of-type(6){
+    flex-basis: 800px;
+    position: unset;
+    height: 50%;
+ }
+  .products div:nth-of-type(7){
+    flex-basis: 500px;
+    position:unset;
+  }
+  .products div:nth-of-type(8){
+    flex-basis: 430px;
+    position: unset;
+  }
+  .products div:nth-of-type(9){
+    flex-basis: 430px;
+    position: unset;
+  }
+  .products img{
+    width: 100%; 
+    height: 50%;
+  }
+
+}

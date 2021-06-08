@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style2.css" rel="stylesheet" rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0dd7d287ba.js" crossorigin="anonymous"></script>
+    <title>Contact Us</title>
+</head>
+<body>
+    <ul class="Navi">
+         <a href="index.html">Home</a>
+		 <a href="AboutUs.html">AboutUs</a>
+         <a href="Products.html">Products</a>
+         <a href="Gallery.html">Gallery</a>
+         <a href="Contact.html">Contact Us</a>
+    </ul>
+    <br>
+    <p id="Cons"><i class="far fa-envelope"></i> Contact Us</p>
+    <p><Img id="Side" src="Images/Contact-min.jpg" width="1000" height="900"></Img></p>
+
+   <div id="SideF"> 
+    <form name="Form">
+       <label for="First" id="Fn">First name:</label>
+        <input type="text" id="Fname" name="Fname" placeholder="First Name" required ><br>
+        
+       <label for="Last" id="Ln">Last name:</label>
+        <input type="text" id="Lname" name="Lname" placeholder="Last Name" required ><br>
+
+       <label for="Phone" id="Pn">Phone number:</label>
+        <input type="tel" id="Pnum" name="Pnum" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required ><br>
+
+        <label for="Email" id="Pn">Email Address:</label>
+        <input type="email" id="EM" name="EM" placeholder="YourEmail@mail.com" required ><br>
+
+        <label for="First" id="Pn">Message:</label><br>
+        <textarea id="TArea" name="TA" rows="7" cols="40" placeholder="Put your Message Here."> 
+        </textarea><br><br>
+
+        <button type="submit" value="submit" id="button">submit</button>
+      
+    </form>
+    </div>
+</body>
+</html>

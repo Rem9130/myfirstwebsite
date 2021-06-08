@@ -1,0 +1,212 @@
+body, html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: #ad6e41;
+    margin: 5px;
+    align-items: center;
+}
+.Navi {
+    overflow: hidden;
+    background-color: rgb(253, 138, 7);
+  }
+  
+  .Navi a {
+    float: left;
+    display: float;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pattaya', sans-serif ;;
+  }
+  
+  .Navi a:hover {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .Navi a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .Navi .icon {
+    display: none;
+  }
+
+    /*Contact Us*/
+input[type= text],[type= tel],[type= email]{
+    width: 300px;
+    margin: 7px 0;
+    padding: 10px 10px;
+    display: block;
+    border: 3px solid rgb(53, 50, 45);
+
+}
+form{
+    background-color: peachpuff;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+textarea{
+ border: 3px solid rgb(53, 50, 45);
+  
+}
+button{
+    background-color: #fffb07;
+    width:  20%;
+    padding: 9px 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    border: none;
+    color: #000000;
+    margin-left: 150px;
+    font-size: 20px;
+    font-family: cursive;
+}
+button:hover{
+    opacity: 0.5;
+}
+
+Img{
+    width: 600px;
+    height: 840px;
+    object-fit: cover;
+    float: right;
+}
+#SideF{
+    position: relative;
+    float: left;
+    margin-left: 20%;
+}
+#Cons{
+    font-family:'Pattaya', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    background-color: chocolate;
+}
+footer{
+    overflow: hidden;
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pattaya', sans-serif ;
+}
+
+.Footer li{
+    padding: 30px;;
+    color: peachpuff;
+}
+
+/*Developer Tools Ipad size*/
+@media (min-width:521px) and (max-width:768px){
+img{
+    display: none;
+}
+form{
+    font-size: 30px;
+    background-color: peachpuff;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    border-radius: 25px;
+}
+input[type= text],[type= tel],[type= email]{
+    width: 400px;
+    margin: 7px 0;
+    padding: 10px 10px;
+    display: block;
+    border: 3px solid rgb(53, 50, 45);
+}
+input{
+    font-size: 1em;
+}
+#SideF{
+    position: unset;
+    float: unset;
+    margin-left: 1%;
+}
+#Side{
+    position: unset;
+    float: unset;
+}
+textarea{
+    border: 3px solid rgb(53, 50, 45);
+   }
+button{
+width: 30%;
+margin-left: 180px;
+font-size: 30px;
+}
+.Footer{
+    position: unset;
+}
+}
+
+/*Developer tools IphoneX size*/
+@media (min-width:100px) and (max-width:520px){
+    img{
+        display: none;
+    }
+    .Navi a:not(:first-child) {display: none;}
+    .Navi a.icon {
+      float: right;
+      display: block;
+    }
+    .Navi.responsive {position: relative;}
+    .Navi.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .Navi.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    form{
+        font-size: 30px;
+        background-color: peachpuff;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 25px;
+        border: 2px solid #000000;
+        border-radius: 25px;
+    }
+    input[type= text],[type= tel],[type= email]{
+        width: 250px;
+        margin: 7px 0;
+        padding: 10px 10px;
+        display: block;
+        border: 3px solid rgb(53, 50, 45);
+    }
+    input{
+        font-size: 20px;
+    }
+    #SideF{
+        position: unset;
+        float: unset;
+        margin-left: 1%;
+    }
+    #Side{
+        position: unset;
+        float: unset;
+    }
+    textarea{
+        border: 3px solid rgb(53, 50, 45);
+       }
+    button{
+    width: 40%;
+    margin-left: 100px;
+    font-size: 30px;
+    }
+}

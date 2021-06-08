@@ -1,0 +1,160 @@
+body, html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: #ad6e41;
+    margin: 5px;
+    align-items: center;
+}
+.Navi {
+    overflow: hidden;
+    background-color: rgb(253, 138, 7);
+  }
+  
+  .Navi a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: 'Pattaya', sans-serif ;;
+  }
+  
+  .Navi a:hover {
+    background-color: yellow;
+    color: black;
+  }
+  
+  .Navi a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .Navi .icon {
+    display: none;
+  }
+
+     /**Products**/
+     h2{
+        font-family:'Pattaya', sans-serif ;
+        font-size: 50px;
+        background: chocolate;
+        text-align: center;
+      }
+     .products div{
+        border: 5px solid black;
+        border-radius: 50px;
+        background-color: white;
+        margin: 50px;
+        padding: 50px;
+        width: 400px;
+        position: relative;
+        left: 50px;
+    }
+    .products{
+        border: 3px outset black;
+        height: 300; width: 400;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        overflow: auto;
+        background-color: peachpuff;
+    }
+    .products p {
+        font-family:'Pattaya', sans-serif ;
+        text-align: center;
+        font-size: 50px;
+    }
+    button{
+        background: rgb(249, 253, 18);
+        border: none;
+        color: rgb(0, 0, 0);
+        font-size: 20px;
+        margin-top: 10px;
+        padding: 10px;
+        width: 50%;
+        position: relative;
+        left:25%;
+        border: 3px outset black;
+        border-radius: 25px;
+        font-size: 30px;
+    }
+    button:hover{
+        opacity: 0.5;
+        
+    }
+
+    /*Developer tools IphoneX size*/
+@media (min-width:100px) and (max-width:520px){     
+    h2{
+    font-family:'Pattaya', sans-serif ;
+    font-size: 50px;
+    background: chocolate;
+    text-align: center;
+  }
+  .Navi a:not(:first-child) {display: none;}
+    .Navi a.icon {
+      float: right;
+      display: block;
+    }
+    .Navi.responsive {position: relative;}
+    .Navi.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .Navi.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ .products div{
+     position: relative;
+     left: 2px;
+    border: 5px solid black;
+    border-radius: 50px;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    
+}
+.products img{
+    width: 80%;
+    position: relative;
+    left: 25px;
+}
+.products{
+    border: 3px outset black;
+    height: 100%; width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    overflow: auto;
+    background-color: peachpuff;
+}
+.products p {
+    font-family:'Pattaya', sans-serif ;
+    text-align: center;
+    font-size: 40px;
+}
+button{
+    background: rgb(249, 253, 18);
+    border: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 50%;
+    position: relative;
+    left:25%;
+    border: 3px outset black;
+    border-radius: 25px;
+}
+button:hover{
+    opacity: 0.5;
+    
+}
+
+}

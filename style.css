@@ -1,0 +1,318 @@
+
+.Banner{
+    background-image: linear-gradient(rgba(0 ,0 ,0 , 0.5), rgba(0,0,0,0.5)), url("Images/Banner-min.jpg");
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.Btext{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+}
+body, html{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background-color: #ad6e41;
+    padding: 2px;
+}
+.Desc{
+    background-image: url(Images/BG-min.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+#Dcs{
+    text-align: center;
+}
+p{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 27px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+h1{
+    font-family: 'Pattaya', sans-serif;
+    font-size: 60px;
+}
+h2{
+    margin-top: 5px;
+    font-size: 40px;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    background-color: peachpuff;
+}
+footer{
+    font-family: 'Pattaya', sans-serif;
+} 
+img{
+        position: relative;
+        width: 100%;
+    }
+    .Navi {
+        overflow: hidden;
+        background-color: rgb(253, 138, 7);
+      }
+      
+      .Navi a {
+        float: left;
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: 'Pattaya', sans-serif ;;
+      }
+      
+      .Navi a:hover {
+        background-color: yellow;
+        color: black;
+      }
+      
+      .Navi a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+      
+      .Navi .icon {
+        display: none;
+      }
+
+/***Home***
+*********/
+.Desc h2 {
+    font-size: 40px;
+    font-family: 'Pattaya', sans-serif;
+    text-align: center;
+    background-color: unset;
+
+}
+p{
+    font-size: 30px ;
+}
+/*Contact Us*/
+input[type= text],[type= tel],[type= email]{
+    width: 300px;
+    margin: 8px 0;
+    padding: 7px 10px;
+    display: block;
+    border: 3px solid rgb(53, 50, 45);
+
+}
+textarea{
+ border: 3px solid rgb(53, 50, 45);
+  
+}
+button{
+    background-color: #f0c506;
+    width:  10%;
+    padding: 9px 5px;
+    margin: 5px 0;
+    cursor: pointer;
+    border: none;
+    color: #000000;
+    margin-left: 80px;
+    font-size: 15px;
+}
+button:hover{
+    opacity: 0.8;
+}
+
+#Side{
+    width: 2000px;
+    height: 300px;
+    object-fit: cover;
+}
+#Front{
+    position: relative;
+}
+/*Desktop*/
+@media (min-width:981px)  {
+   
+    section{
+        padding: 4%;
+        margin: 5%;
+        margin-right: 10px;
+        float: none;
+    }
+    section img{
+        padding: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+    }
+    #B{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #Ba{
+        width: 20%;
+        background-color: orange;
+        color: black;
+    }
+    #Bb{
+        width: 18%;
+        background-color: orange;
+        color: black;
+    }
+
+    #Cc{
+        width: 17%;
+        background-color: orange;
+        color: black;
+    }
+    
+    .Footer{
+        display: flex;
+        flex-direction: row;
+        list-style-type: square;
+    
+    }
+    .Footer li{
+        padding-right: 50px;
+        color: peachpuff;
+    }
+    details :hover{
+        background-color: rgb(189, 123, 0);
+    }
+
+}
+/*Developer Tools Ipad size*/
+@media (min-width:521px) and (max-width:768px){
+    body{
+        background-size: 100% 100%;
+    }
+    .Desc{
+        font-size: 30px;
+    }
+    article p{
+        font-size: 30px;
+    }
+    #B{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #Ba{
+        width: 60%;
+        padding: 5px;
+        background-color: orange;
+        color: black;
+    }
+    #Bb{
+        width: 60%;
+        padding: 5px;
+        background-color: orange;
+        color: black;
+    }
+    #Cc{
+        width: 60%;
+        padding: 5px;
+        background-color: orange;
+        color: black;
+    }
+    section{
+        width: 100%;
+        float: left;
+        margin: 2px;
+    }
+    section img{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+    }
+    details :hover{
+        background-color: rgb(189, 123, 0);
+    }
+    
+    
+    .Footer{
+        display: flex;
+        flex-direction: row;
+        list-style-type: square;
+    
+    }
+    .Footer li{
+        padding-right: 50px;;
+        color: peachpuff;
+    }
+}
+/*Developer tools IphoneX size*/
+@media (min-width:100px) and (max-width:520px){
+    body{
+        background-size: 100% 100%;
+    }
+    #Front{
+        display: none;
+    }
+    .Navi a:not(:first-child) {display: none;}
+    .Navi a.icon {
+      float: right;
+      display: block;
+    }
+    .Navi.responsive {position: relative;}
+    .Navi.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .Navi.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    section{
+        width: 100%;
+        float: none;
+        margin: 2px;
+    }
+    article{
+        margin-left: 20px;
+    }
+    section img{
+
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10px;
+    }
+    #B{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    #Ba{
+        width: 87%;
+        background-color: orange;
+        color: black;
+    }
+    #Bb{
+        width: 87%;
+        background-color: orange;
+        color: black;
+    }
+    #Cc{
+        width: 87%;
+        background-color: orange;
+        color: black;
+    }
+    .Footer{
+        display: flex;
+        flex-direction: row;
+        list-style-type: square;
+    
+    }
+    .Footer li{
+        padding: 5px;;
+        color: peachpuff;
+    }
+    details :hover{
+        background-color: rgb(189, 123, 0);
+    }
+}
+
